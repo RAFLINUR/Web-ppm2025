@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Gucheez{% endblock %}</title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS v4.5.2 dari CDN StackPath -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS v5.3.0-alpha1 dari CDN jsDelivr -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"><!-- DataTables CSS v1.13.6 dari CDN DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css"> <!-- DataTables Buttons CSS v2.4.1 dari CDN DataTables -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CSS v5.15.4 dari CDN jsDelivr -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS v5.3.0-alpha3 dari CDN jsDelivr -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> <!-- jQuery v3.7.0 dari CDN jQuery -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> <!-- DataTables JS v1.13.6 dari CDN DataTables -->
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script> <!-- DataTables Buttons JS v2.4.1 dari CDN DataTables -->
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script> <!-- DataTables Buttons HTML5 export JS v2.4.1 dari CDN DataTables -->
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script> <!-- DataTables Buttons Print export JS v2.4.1 dari CDN DataTables -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script> <!-- JSZip v3.10.1 untuk file ZIP, dari CDN jsDelivr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.5/pdfmake.min.js"></script> <!-- PDFMake JS v0.2.5 untuk file PDF, dari CDN jsDelivr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.5/vfs_fonts.js"></script> <!-- PDFMake Fonts JS untuk file PDF, dari CDN jsDelivr -->
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/static/foto/background-removebg-preview.png" alt="logo gucheez" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/" style="color: rgb(0, 0, 0);">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/produk" style="color: rgb(0, 0, 0);">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/layanan" style="color: rgb(0, 0, 0);">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/kontak" style="color: rgb(0, 0, 0);">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="py-5" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(34, 34, 34, 1)), url('gambar footer') no-repeat center center; background-size: cover; background-attachment: fixed;">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="text-light">Follow Us</h5>
+                    <p class="text-light">Connect with us on social media!</p>
+                    <a href="https://www.instagram.com/oleholehkhastegal?igsh=MXU3ajMweXZ0dWN6NA==" class="text-light mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-light mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="" class="text-light"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-light">&copy; 2025 Wisnu gucheez. Crafted with</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

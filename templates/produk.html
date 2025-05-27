@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Gucheez{% endblock %}
+
+{% block content %}
+<section id="layanan" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Produk Kami</h2>
+        <p class="mb-5 text-muted">Kami menyediakan berbagai aneka macam rasa, Silahkan dipilih sesuai selera anda.</p>
+    
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/static/foto/coklat keju.jpeg" class="card-img-top" alt="Gucheez rasa coklat keju" style="object-fit: cover; height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gucheez rasa coklat keju</h5>
+                        <p class="card-text text-muted">nikmati perpaduan antara gurihnya keju,lembutnya gucheez,dan lumernya coklat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/static/foto/Kombinasi.jpeg" class="card-img-top" alt="Gucheez Kombinasi 4 Rasa" style="object-fit: cover; height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gucheez Kombinasi 4 Rasa</h5>
+                        <p class="card-text text-muted">perpaduan 4 rasa yaitu nanas madu,coklat keju,pisang keju,pisang coklat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/static/foto/nanas madu.jpeg" class="card-img-top" alt="Gucheez Rasa Nanas Madu" style="object-fit: cover; height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gucheez Rasa Nanas Madu</h5>
+                        <p class="card-text text-muted">perpaduan antara manisnya nanas dengan gurihnya madu atau ini biasa disebut original.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tabel Daftar Produk -->
+<div class="container py-5">
+    <h2 class="text-center mb-4">Daftar Produk</h2>
+
+    <!-- Pencarian Produk -->
+    <div class="mb-3">
+        <input type="text" id="searchProduct" class="form-control" placeholder="Cari produk...">
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Produk</th>
+                    <th>Gambar</th>
+                    <th>Harga</th>
+                    <th>Kategori</th>
+                    <th>Stok</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in produk %}
+                <tr>
+                    <td>{{ item[0] }}</td>
+                    <td>{{ item[1] }}</td>
+                    <td><img src="{{ item[2] }}" alt="{{ item[1] }}" style="width: 50px; height: 50px; object-fit: cover;"></td>
+                    <td>{{ item[3] }}</td>
+                    <td>{{ item[4] }}</td>
+                    <td>{{ item[5] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
