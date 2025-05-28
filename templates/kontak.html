@@ -1,24 +1,33 @@
 {% extends "base.html" %}
 {% block title %}Kontak - Gucheez{% endblock %}
 {% block content %}
-<section id="contact" class="py-5">
+<section id="contact" class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+<div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: -1; overflow: hidden;">
+  <img src="/static/foto/no layanan.jpg" 
+       alt="background" 
+       class="img-fluid"
+       style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.05);">
+</div>
+
     <div class="container text-center">
-        <h3 class="mb-4">Kontak Kami</h3>
         <div class="row justify-content-center">
             <!-- Informasi Kontak -->
             <div class="col-md-6 mb-4">
+                <h3 class="mb-4 fw-bold">Kontak Kami</h3>
                 <div class="card p-4">
                     <h5 class="card-title">Informasi Kontak</h5>
-                    <p><i class="bi bi-geo-alt-fill text-primary"></i>Babakan, RT.4/RW.3, Babakan, Tuwel, Kec. Bojong, Kabupaten Tegal, Jawa Tengah 52465</p>
-                    <p><i class="bi bi-envelope-fill text-primary"></i> Email: <a href="mailto:info@mountaim.com">wisnumaulana2208@gmail.com</a></p>
-                    <p><i class="bi bi-telephone-fill text-primary"></i> Telepon: <a href="tel:082133979919">085877351241</a></p>
+                    <p><i class="bi bi-geo-alt-fill text-primary"></i> AGIVA STORE, Jl. Teratai 1, RT 20 RW 2,
+                        Pengopakan, Ujungrusi, Kec. Adiwerna, Kab. Tegal 52194</p>
+                    <p>
+                        <i class="bi bi-geo-alt-fill text-primary"></i> Gmaps:
+                        <a href="https://maps.app.goo.gl/2ec29vFxdgyrWsnp6?g_st=iw" target="_blank" rel="noopener noreferrer">
+                            Lihat Lokasi
+                        </a>
+                    </p>
+                    <p><i class="bi bi-telephone-fill text-primary"></i> Telepon: <a href="tel:0857-1796-8403">0857-1796-8403</a></p>
                 </div>
             </div>
-            </div>
         </div>
-
     </div>
 </section>
-
 {% endblock %}
-

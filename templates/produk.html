@@ -3,52 +3,50 @@
 {% block title %}Gucheez{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="static/style.css">
 <section id="layanan" class="py-5 bg-light">
     <div class="container text-center">
         <h2 class="mb-4">Produk Kami</h2>
-        <p class="mb-5 text-muted">Kami menyediakan berbagai aneka macam rasa, Silahkan dipilih sesuai selera anda.</p>
-    
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="/static/foto/coklat keju.jpeg" class="card-img-top" alt="Gucheez rasa coklat keju" style="object-fit: cover; height: 300px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Gucheez rasa coklat keju</h5>
-                        <p class="card-text text-muted">nikmati perpaduan antara gurihnya keju,lembutnya gucheez,dan lumernya coklat.</p>
-                    </div>
-                </div>
+        <p class="mb-5 text-muted">Kami menyediakan berbagai aneka macam kurma, Silahkan dipilih sesuai selera anda.</p>
+
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="static/foto/Ajwa Madinah.jpeg" alt="Product 1">
+                <h3>Ajwa Madinah</h3>
+                <p>Ajwa Madinah
+                    Kurma hitam khas Madinah dengan rasa manis lembut dan aroma rempah. Disebut juga Kurma Nabi, kaya
+                    manfaat untuk
+                    kesehatan.</p>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="/static/foto/Kombinasi.jpeg" class="card-img-top" alt="Gucheez Kombinasi 4 Rasa" style="object-fit: cover; height: 300px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Gucheez Kombinasi 4 Rasa</h5>
-                        <p class="card-text text-muted">perpaduan 4 rasa yaitu nanas madu,coklat keju,pisang keju,pisang coklat.</p>
-                    </div>
-                </div>
+            <div class="product-card">
+                <img src="static/foto/Kurma Tunisia Madu.jpeg" alt="Product 2">
+                <h3>Tunisia madu</h3>
+                <p>Kurma keemasan asal Tunisia, rasanya manis seperti madu dengan tekstur lembut. Cocok untuk camilan
+                    sehat.</p>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="/static/foto/nanas madu.jpeg" class="card-img-top" alt="Gucheez Rasa Nanas Madu" style="object-fit: cover; height: 300px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Gucheez Rasa Nanas Madu</h5>
-                        <p class="card-text text-muted">perpaduan antara manisnya nanas dengan gurihnya madu atau ini biasa disebut original.</p>
-                    </div>
-                </div>
+            <div class="product-card">
+                <img src="static/foto/Ruthob lidya.jpeg" alt="Product 3">
+                <h3>Ruthob Lidya</h3>
+                <p>Kurma muda bertekstur lembut dan juicy. Rasanya manis segar, nikmat disajikan dingin.</p>
+            </div>
+            <div class="product-card">
+                <img src="static/foto/Sukari.jpeg" alt="Product 3">
+                <h3>Sukari</h3>
+                <p>Kurma berwarna cokelat terang dengan rasa sangat manis dan tekstur lumer. Dijuluki Kurma Ratu.</p>
             </div>
         </div>
-    </div>
 </section>
 
 <!-- Tabel Daftar Produk -->
-<div class="container py-5">
-    <h2 class="text-center mb-4">Daftar Produk</h2>
+<!-- <div class="container py-5">
+    <h2 class="text-center mb-4">Daftar Produk</h2> -->
 
-    <!-- Pencarian Produk -->
-    <div class="mb-3">
+<!-- Pencarian Produk -->
+<!-- <div class="mb-3">
         <input type="text" id="searchProduct" class="form-control" placeholder="Cari produk...">
-    </div>
+    </div> -->
 
-    <div class="table-responsive">
+<!-- <div class="table-responsive">
         <table class="table table-bordered table-hover">
             <thead class="table-dark">
                 <tr>
@@ -74,6 +72,6 @@
             </tbody>
         </table>
     </div>
-</div>
+</div> -->
 
 {% endblock %}
